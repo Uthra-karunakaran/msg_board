@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1 style="margin: 30px;"><%= title %></h1>
+        <ul>
+        <% messages.map((msg)=>{ %>
+            <div  style="border: 1px solid black; padding: 15px; margin: 20px;">
+            <p><%= msg.user %></p>
+            <p><%= msg.text %></p>
+            <p><%= msg.added %></p>
+            </div>
+        <% }) %>
+        </ul>
+        <a href="/new">send a new message</a>
+    </body>
+</html>
